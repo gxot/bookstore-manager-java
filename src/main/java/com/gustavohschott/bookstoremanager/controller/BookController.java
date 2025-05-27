@@ -3,6 +3,7 @@ package com.gustavohschott.bookstoremanager.controller;
 import com.gustavohschott.bookstoremanager.dto.BookDTO;
 import com.gustavohschott.bookstoremanager.dto.MessageResponseDTO;
 import com.gustavohschott.bookstoremanager.entity.Book;
+import com.gustavohschott.bookstoremanager.exception.BookNotFoundException;
 import com.gustavohschott.bookstoremanager.repository.BookRepository;
 import com.gustavohschott.bookstoremanager.service.BookService;
 import jakarta.validation.Valid;
@@ -27,7 +28,7 @@ public class BookController {
     }
 
     @GetMapping("/{id}")
-    public BookDTO findByID(@PathVariable Long id) {
+    public BookDTO findByID(@PathVariable Long id) throws BookNotFoundException {
         return bookService.findById(id);
     }
 }
