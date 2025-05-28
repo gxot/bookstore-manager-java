@@ -1,3 +1,3 @@
-# API para cadastro e busca de livros
+# API REST para loja de livros fictícia
 
-(Documentação em breve)
+(Em andamento...)
