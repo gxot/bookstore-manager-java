@@ -25,7 +25,7 @@ Inclui operações CRUD completas e pode ser facilmente testada com o Postman.
 - Java 17+
 - Maven 3.8+
 
-### ✅ Passos
+### ✅ Passos:
 
 ```bash
 # 1. Clone o repositório:
@@ -49,7 +49,7 @@ spring.jpa.show-sql=true
 ### ✅ Compile e execute
 
 ```bash
-./mvnw spring-boot:run
+mvnw spring-boot:run
 ```
 
 OU
@@ -62,10 +62,6 @@ OU
 4. Configure o PostgreSQL rodando via Docker conforme instruções anteriores.
 5. No painel lateral, abra a classe principal com `@SpringBootApplication` (ex.: `BookstoreManagerApplication.java`).
 6. Clique no ícone verde ▶️ ao lado do método `main` para executar a aplicação.
-
-### ✅ Como parar via IntelliJ IDEA
-
-- Clique no quadrado vermelho ⏹️ na barra inferior ou no console do Run.
 
 ---
 
