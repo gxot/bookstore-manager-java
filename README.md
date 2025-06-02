@@ -30,9 +30,11 @@ Inclui operações CRUD completas e pode ser facilmente testada com o Postman.
 ```bash
 # 1. Clone o repositório:
 git clone https://github.com/seu-usuario/bookstore-manager.git
+
+# 2. Vá até o repositório do projeto:
 cd bookstore-manager
 
-# 2. Suba o PostgreSQL com Docker Compose:
+# 3. Suba o PostgreSQL com Docker Compose:
 docker compose up -d
 ```
 
