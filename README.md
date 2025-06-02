@@ -41,9 +41,12 @@ docker compose up -d
 ### ✅ Configure o `application.properties`
 
 ```properties
+spring.application.name=bookstoremanager
 spring.datasource.url=jdbc:postgresql://localhost:5432/bookstoremanager
 spring.datasource.username=bookstore_user
 spring.datasource.password=bookstore_pass
+spring.datasource.driver-class-name=org.postgresql.Driver
+spring.jpa.database-platform=org.hibernate.dialect.PostgreSQLDialect
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 ```
