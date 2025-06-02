@@ -162,18 +162,18 @@ OU
 - Consultável via pgAdmin, DBeaver ou psql.
 
 ### ✅ Como parar a aplicação:
-Para encerrar o BD: 
+#### Para encerrar o BD: ####
 ```bash
 docker compose down
 ```
     
-Para fechar a aplicação:
+#### Para fechar a aplicação: ####
 
-Caso rodando via terminal: 
+##### Caso rodando via terminal: ##### 
  ```bash
  Cntrl + C (2x)
 ```
      
-Caso rodando via IntelliJ:
+##### Caso rodando via IntelliJ: #####
 
 Clique no quadrado vermelho ⏹️ na barra inferior ou no console do Run.
