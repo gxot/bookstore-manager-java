@@ -17,11 +17,8 @@ public class AutorDTO {
 
     private Long id;
 
-    @NotBlank
-    @Size(max = 200)
     private String nome;
 
-    @NotNull
     private Integer idade;
 
 }

@@ -29,10 +29,10 @@ public class Book {
     @Column(nullable = false)
     private String isbn;
 
-    @Column(name = "nome_da_editora", nullable = false, unique = true)
+    @Column(name = "nome_da_editora", nullable = false)
     private String nomeEditora;
 
-    @ManyToOne(fetch = FetchType.LAZY, cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REMOVE})
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "autor_id")
     private Autor autor;
 
