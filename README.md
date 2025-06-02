@@ -159,7 +159,9 @@ OU
 - Volume persistente `pgdata` criado automaticamente.
 - Consultável via pgAdmin, DBeaver ou psql.
 
-### ✅ Como parar a aplicação:
+---
+
+## ✅ Como parar a aplicação:
 #### Para encerrar o BD: ####
 ```bash
 docker compose down
