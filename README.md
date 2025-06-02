@@ -131,10 +131,10 @@ http://localhost:8080/api/v1/books
 - Consultável via pgAdmin, DBeaver ou psql.
 
 ✅ Como parar a aplicação:
-Para fechar o BD:
-```docker compose down```
-Para fechar a aplicação:
-Caso rodando via terminal:
-```Cntrl + C (2x)``` 
-Caso rodando via IntelliJ:
+Para fechar o BD: 
+```docker compose down```    
+Para fechar a aplicação: 
+Caso rodando via terminal: 
+ ```Cntrl + C (2x)```     
+Caso rodando via IntelliJ: 
 Clique no quadrado vermelho ⏹️ na barra inferior ou no console do Run.
