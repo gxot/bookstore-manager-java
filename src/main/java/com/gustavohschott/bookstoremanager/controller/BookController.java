@@ -28,14 +28,24 @@ public class BookController {
         return bookService.create(bookDTO);
     }
 
+    @GetMapping
+    public List<BookDTO> findAll() throws NoBooksFoundException {
+        return bookService.findAll();
+    }
+
     @GetMapping("/{id}")
     public BookDTO findByID(@PathVariable Long id) throws BookNotFoundException {
         return bookService.findById(id);
     }
 
-    @GetMapping("/allbooks")
-    public List<BookDTO> findAll() throws NoBooksFoundException {
-        return bookService.findAll();
+    @PutMapping("/{id}")
+    public MessageResponseDTO update(@PathVariable Long id, @RequestBody BookDTO bookDTO) throws BookNotFoundException, AutorNotFoundException {
+        return bookService.update(id, bookDTO);
+    }
+
+    @DeleteMapping("/{id}")
+    public MessageResponseDTO delete(@PathVariable Long id) throws BookNotFoundException {
+        return bookService.delete(id);
     }
 
 }
